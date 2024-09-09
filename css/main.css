@@ -1,0 +1,407 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --header-top-color: #0e1422;
+  --hero-background-color: #F6F6F6;
+  --main-text-color: #0e1422;
+  --secondary-text-color: #5c5f6a;
+  --third-text-color: #878a92;
+  --four-text-color: #202533;
+  --button-color: #0e1422;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.form-control:focus,
+.form-control:active{
+    box-shadow:none !important;
+    outline:0px !important;
+}
+
+a,ul,li {
+  text-decoration: none;
+  list-style: none !important;
+}
+
+* { outline:none; }
+input, textarea { outline:none; }
+input:focus, textarea:focus { outline:none; }
+
+.btn-outline-secondary {
+  border-color: #E6E7E8;
+}
+
+.btn-outline-secondary:focus, .btn-outline-secondary:focus-visible {
+  border-color: #E6E7E8;
+  background-color: #fff;
+}
+
+/* Header rules */
+
+.header_top {
+  background-color: var(--header-top-color);
+}
+
+.header_top p {
+  padding-top: 10px;
+  color: #ffffff;
+}
+
+.header_top p:last-child {
+  padding-left: 8.5px;
+}
+
+.nav {
+  margin-left: 100px;
+}
+
+.nav-link {
+  color: var(--secondary-text-color);
+}
+
+.nav-link:hover {
+  color: var(--secondary-text-color);
+}
+
+.search_nav input#typeText {
+  padding-left: 45px;
+  font-size: 14px;
+  float: left;
+  color: #63717f;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+
+.search_nav  .icon{
+  position: absolute;
+  margin-left: 17px;
+  margin-top: 8px;
+  z-index: 1;
+  color: #4f5b66;
+}
+
+.header_cart-icon {
+  margin-right: 32px;
+  margin-left: 32px;
+}
+
+/* Hero rules */
+
+.hero {
+  background-color: var(--hero-background-color);
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero_text h1 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.hero_text p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #474B57;
+}
+
+.hero_button {
+  background-color: black;
+  color: white !important;
+}
+
+.hero_img {
+  width: 340px;
+  background-image: url("/assets/img/hero/herobag.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero_img img {
+  padding-top: 22px;
+}
+
+/* Main rules */
+
+/* Advantages rules */
+
+.advantages {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 88px;
+}
+
+.advantages_cards {
+  width: 328px;
+  height: 218px;
+}
+
+.advantages_cards h3 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  color: var(--four-text-color);
+}
+
+.advantages_cards p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--secondary-text-color);
+}
+
+/* Shopnow rules */
+
+.shopnow {
+  margin-top: 70px;
+}
+
+.shopnow-top h2 {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--third-text-color);
+}
+
+.shopnow-top p {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  color: var(--main-text-color);
+}
+
+.shopnow_cards {
+  margin-top: 80px;
+}
+
+.shopnow_cards img {
+  background-color: #F6F6F6;
+}
+
+.shopnow-cardplate {
+  width: 264px;
+}
+
+.shopnow-cardplate--text h3 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #0E1422;
+  padding-top: 25px;
+}
+
+.shopnow-cardplate--text a {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  color: var(--button-color);
+}
+
+.shopnow-cardplate--text p {
+  padding-top: 14.5px;
+}
+
+.btn-outline-shop {
+  background-color: transparent;
+  border: 1px solid #878a92;
+  border-radius: 100px;
+  color: var(--button-color);
+  padding: 2px 16px 2px 16px;
+  transition: background-color 0.3s ease;
+  margin-right: 16px;
+}
+
+/* Fashion Paradise rules */
+
+.fashion_paradise {
+  margin-top: 168px;
+  background-color: var(--hero-background-color);
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fashion_paradise-text h1 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.fashion_paradise-text p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #474B57;
+  padding-top: 24px;
+  width: 462px;
+}
+
+.fashion_paradise-button {
+  margin-top: 32px;
+  background-color: black;
+  color: white !important;
+}
+
+/* Featured rules */
+
+.featured{
+  margin-top: 152px;
+}
+
+.featured_top-text p {
+  margin-top: 15px;
+}
+
+.featured_cards {
+  margin-top: 80px;
+}
+
+.featured_cards img {
+  background-color: #F6F6F6;
+}
+
+.featured-cardplate {
+  width: 264px;
+}
+
+.featured-cardplate--text h3 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #0E1422;
+  padding-top: 25px;
+}
+
+.featured-cardplate--text a {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  color: var(--button-color);
+}
+
+.featured-cardplate--text p {
+  padding-top: 14.5px;
+}
+
+.btn-outline-featured{
+  background-color: transparent;
+  border: 1px solid #878a92;
+  border-radius: 100px;
+  color: var(--button-color);
+  padding: 2px 16px 2px 16px;
+  transition: background-color 0.3s ease;
+  margin-right: 16px;
+}
+
+.btn-outline-featured--top {
+  background-color: transparent;
+  border: 1px solid #878a92;
+  border-radius: 100px;
+  color: var(--button-color);
+  padding: 2px 16px 2px 16px;
+  transition: background-color 0.3s ease;
+  margin-right: 16px;
+}
+
+/* Newsletter rules */
+
+.newsletter {
+  margin-top: 152px;
+  height: 200px;
+  background-color: var(--hero-background-color);
+}
+
+.newsletter-info {
+  padding-top: 64px;
+}
+
+.newsletter-info h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: var(--button-color);
+}
+
+.newsletter-info p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--secondary-text-color);
+}
+
+.newsletter_email {
+  width: 300px;
+}
+
+.newsletter_email input#typeText {
+  font-size: 14px;
+  color: #63717f;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.newsletter-button {
+  background-color: black;
+  color: white !important;
+}
+
+/* Footer rules */
+
+.footer {
+  padding-top: 74px;
+  padding-bottom: 27px;
+  background-color: var(--footer-background-color);
+}
+
+.footer_logo p {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--secondary-text-color);
+  line-height: 24px;
+  padding-top: 12px;
+}
+
+.footer_social-media {
+  padding-top: 25px;
+}
+
+.footer_links h4{
+  margin-left: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--third-text-color);
+}
+
+.footer_links a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--secondary-text-color);
+}
+
+.footer_links li {
+  padding-top: 16px;
+} 
+
+.footer_payments h4 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--third-text-color);
+}
+
+.footer-copir {
+  padding-top: 131px;
+}
